@@ -1,7 +1,7 @@
 body {
     margin: 0;
     padding: 0;
-    background-color: rgb(35, 32, 32);
+    background-color:#202124;
     color: white;
     font-family: Arial, Helvetica, sans-serif;
     font-size: 13px;
@@ -64,7 +64,7 @@ main {
 
 main .logo img{
     margin-top: 10px;
-    margin-bottom: 30px;
+    margin-bottom: 20px;
 }
 
 main .main_input {
@@ -79,37 +79,77 @@ main .main_input_container {
 }
 
 main .main_input input{
-    border-radius: 80px;
+    border-radius: 100px;
     border-style: solid;
     border-width: 1px;
-    border-color:  #9a9b9d;
+    border-color:  #5F6368;
     padding: 12px;
-    background-color: rgb(35, 32, 32);
+    background-color: #202124;
     width: 550px;
-    height: 20px;
+    height: 22px;
     outline: none;
-
+    background-image: url("../imagenes/lupa.png"), url("../imagenes/google_lens.png");
+    background-position-y: center, center;
+    background-position-x: 15px, 540px;
+    background-repeat: no-repeat;
+    background-size: 13px, 20px;
+    display: inline-block;
 }
 
 main .main_input input:hover{
-    border-radius: 80px;
     border: none;
+    margin-top: 2px;
     border-color:  #9a9b9d;
-    padding: 12px;
-    background-color: #464647;
-    width: 550px;
-    height: 20px;
-    outline: none;
-
+    background-color: #2e2e2f;
 }
 
-main .main_input .main_input_container .search_icon{
-    background-image: url("../imagenes/lupa.png");
-    background-size: contain;
-    background-position-y: center;
-    background-repeat: no-repeat;
-}
 
-main .search_buttons div{
+main .search_buttons{
     display: inline-block;
+}
+
+main .search_buttons button{
+    background-color: #303135;
+    color: white;
+    border-radius: 3px;
+    font-size: 14px;
+    border: none;
+    margin-left: 10px;
+    width: 150px;
+    height: 35px;
+}
+
+main .search_buttons button:hover{
+    background-color: #303135;
+    color: white;
+    border-radius: 3px;
+    border-color:  #8a8a8a;
+    cursor: pointer;
+    border-width: thin;
+    font-size: 14px;
+    border-style:solid;
+    margin-left: 10px;
+    width: 150px;
+    height: 35px;
+}
+
+main .offered_by .credits{
+    margin-top: 30px;
+    color: #babbbc;
+}
+
+main .offered_by .credits .language{
+    display: inline-block;
+    margin-left: 5px;
+    margin-top: 2px;
+    color: rgb(67, 164, 228);   
+}
+
+main .offered_by .credits .language:hover{
+    display: inline-block;
+    cursor: pointer;
+    margin-left: 5px;
+    margin-top: 2px;
+    color: rgb(67, 164, 228);   
+    text-decoration: underline;
 }
